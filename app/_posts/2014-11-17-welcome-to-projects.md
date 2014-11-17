@@ -4,6 +4,7 @@ permalink: /thoughts/welcome-to-projects
 categories: projects
 layout: project
 ---
+
 Here is my latest project!
 
 {% highlight sh %}
