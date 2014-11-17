@@ -3,9 +3,9 @@ layout: default
 title: "Cade Scroggins &ndash; Projects"
 description: "My projects."
 ---
-  <main id="projects">
-    <h2>Projects</h2>
-    <ul class="posts">
-      {% for post in site.posts %}{% if post.layout == "project" %}<li><span>{{ post.date | date: '%B %d, %Y' }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
-    </ul>
-  </main>
+<main id="projects">
+  <h2>Projects</h2>
+  <ul class="posts">
+    {% for post in site.posts %}{% if post.layout == "project" %}<li><span>{{ post.date | date: '%B %d, %Y' }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+  </ul>
+</main>
