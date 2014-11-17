@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-11-12 14:40:13
+title: "Welcome to Jekyll!"
+permalink: /thoughts/welcome-to-jekyll
+date: 2014-11-12 14:40:13
 categories: jekyll update
+layout: post
+type: thought
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

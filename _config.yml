@@ -3,11 +3,12 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: site.cadejs
-description: My thoughts in pixels.
+name: cadejscroggins
 author:
   name: Cade Scroggins
   email: cade@cadejs.com
+  github: cadejscroggins
+  twitter: cadejscroggins
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -18,9 +19,6 @@ include: ['.htaccess']
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
 show_drafts: true
-
-paginate: 2
-paginate_path: 'page:num'
 
 # Markdown library
 markdown: kramdown
