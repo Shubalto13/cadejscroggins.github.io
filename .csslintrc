@@ -1,5 +1,5 @@
 {
-  "important": false,
+  "important": true,
   "adjoining-classes": false,
   "known-properties": true,
   "box-sizing": false,
@@ -21,7 +21,7 @@
   "floats": false,
   "star-property-hack": false,
   "outline-none": false,
-  "import": false,
+  "import": true,
   "ids": true,
   "underscore-property-hack": false,
   "rules-count": false,
