@@ -3,9 +3,9 @@ layout: default
 title: "Cade Scroggins &ndash; Projects"
 description: "My projects."
 ---
-<div id="projects">
+<main id="projects">
   <h2>Projects</h2>
   <ul class="posts">
     {% for post in site.posts %}{% if post.type == "project" %}<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
   </ul>
-</div>
+</main>
