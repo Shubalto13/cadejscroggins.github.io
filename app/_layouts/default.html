@@ -9,29 +9,36 @@
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ page.description }}">
 
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+
   <!-- build:css({app,.tmp}) /css/main.css -->
   <link rel="stylesheet" href="/css/base.css">
   <!-- endbuild -->
 
 </head>
-<body>
+<body id="{{ page.page }}">
 
   <header>
-    <h1>Cade Scroggins</h1>
+    <h1><a href="/">Cade<span class="hidden-mobile"> Scroggins</span></a></h1>
     <nav>
       <ul>
-        <li><a href="/">About Me</a></li>
-        <li><a href="/thoughts">My Thoughts</a></li>
-        <li><a href="/projects">My Projects</a></li>
+        <li><a href="/thoughts">Thoughts</a></li>
+        <li><a href="/projects">Projects</a></li>
       </ul>
     </nav>
   </header>
 
-  {{ content }}
+  <div class="hero">
+    <h2>{{ page.title }}</h2>
+  </div>
 
-  <footer>
-    <p><span class="red">&lt;3</span>, <a href="/">Cade</a></p>
-  </footer>
+  <div class="content">
+    {{ content }}
+
+    <footer>
+      <p>by <a href="/">Cade Scroggins</a> <span class="no-wrap">(software developer)</span></p>
+    </footer>
+  </div>
 
   <!-- build:js(app) /js/main.js -->
   <script src="/js/main.js"></script>

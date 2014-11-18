@@ -1,0 +1,40 @@
+header {
+  overflow: hidden;
+  background-color: $dark;
+
+  h1 {
+    display: inline-block;
+    margin: 0 0 0 1em;
+  }
+
+  nav {
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 1em;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 1em;
+  }
+}
+
+#project,
+#thought {
+  header {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+
+    @media (min-width: 500px) {
+      position: fixed;
+    }
+  }
+}
