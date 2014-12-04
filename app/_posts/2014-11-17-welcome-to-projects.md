@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Projects!"
-permalink: /thoughts/welcome-to-projects
+permalink: /projects/welcome-to-projects
 categories: projects
 layout: project
 ---
