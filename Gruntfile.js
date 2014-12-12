@@ -32,7 +32,7 @@ module.exports = function (grunt) {
       jekyll: {
         files: [
           '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-          '!<%= yeoman.app %>/_bower_components/**/*'
+          '!<%= yeoman.app %>/vendor/**/*'
         ],
         tasks: ['jekyll:server']
       },
@@ -107,7 +107,7 @@ module.exports = function (grunt) {
         bundleExec: true,
         debugInfo: false,
         lineNumbers: false,
-        loadPath: 'app/_bower_components'
+        loadPath: 'app/vendor'
       },
       dist: {
         files: [{
@@ -253,9 +253,8 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
             //'favicon.ico',
             //'apple-touch*.png'
           ],

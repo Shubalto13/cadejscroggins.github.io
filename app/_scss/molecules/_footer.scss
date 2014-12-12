@@ -1,5 +1,26 @@
-footer {
-  width: 100%;
-  margin: 2em 0;
-  text-align: center;  
+#thought,
+#project {
+  footer {
+    background-color: $dark;
+    text-align: center;
+    overflow: auto;
+
+    a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      padding: 1.5em 1em;
+
+      @media (min-width: $tablet-width) {
+        float: left;
+        width: 50%;
+      }
+    }
+
+    .previous {
+    }
+
+    .next {
+    }
+  }
 }

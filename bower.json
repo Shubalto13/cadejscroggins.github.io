@@ -2,5 +2,7 @@
   "name": "cadejs",
   "version": "0.0.0",
   "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap-sass-official": "~3.3.1"
   }
 }

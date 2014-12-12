@@ -3,8 +3,8 @@ layout: default
 page: thought
 ---
 <main>
-  <p>{{ page.date | date: '%B %d, %Y' }}</p>
   <article>
     {{ content }}
   </article>
+  <a class="tweet-this" href="https://twitter.com/intent/tweet?text={{ page.description }}&amp;url={{ site.url }}{{ page.permalink }}&amp;via={{ site.author.twitter }}&amp;original_referer={{ site.url }}{{ page.permalink }}"><img src="/img/twitter-logo.png" alt="Tweet This" width="41" height="33"></a>
 </main>

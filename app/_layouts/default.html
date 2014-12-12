@@ -19,11 +19,11 @@
 <body id="{{ page.page }}">
 
   <header>
-    <h1><a href="/">Cade <span class="hidden-mobile">Scroggins</span></a></h1>
+    <h1><a{% if page.page == "home" %} class="selected"{% endif %} href="/">Cade <span class="hidden-mobile">Scroggins</span></a></h1>
     <nav>
       <ul>
-        <li><a href="/thoughts">Thoughts</a></li>
-        <li><a href="/projects">Projects</a></li>
+        <li><a{% if page.page == "thoughts" %} class="selected"{% endif %} href="/thoughts">Thoughts</a></li>
+        <li><a{% if page.page == "projects" %} class="selected"{% endif %} href="/projects">Projects</a></li>
       </ul>
     </nav>
   </header>
@@ -36,11 +36,21 @@
     {{ content }}
 
     <footer>
-      <p>Fork me on <a href="http://github.com/cadejscroggins/cadejscroggins.github.io/tree/dev">GitHub</a>. <span class="pink">&lt;3</span></p>
+      {% if page.previous.title %}
+        <a class="previous" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+      {% else %}
+        <a class="previous" href="/">&laquo; Who Am I?</a>
+      {% endif %}
+      {% if page.next.title %}
+        <a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+      {% else %}
+        <a class="previous" href="/">Who Am I? &raquo;</a>
+      {% endif %}
     </footer>
   </div>
 
   <!-- build:js(app) /js/main.js -->
+  <script src="/_vendor/jquery/dist/jquery.js"></script>
   <script src="/js/main.js"></script>
   <!-- endbuild -->
 

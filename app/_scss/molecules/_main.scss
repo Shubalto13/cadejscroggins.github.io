@@ -1,3 +1,21 @@
 main {
-  padding: 2em;
+  padding-bottom: 2em;
+
+  .tweet-this {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    line-height: 125px;
+    border-radius: 50%;
+    text-align: center;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 1em;
+  }
 }

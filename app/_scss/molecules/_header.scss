@@ -1,6 +1,6 @@
 header {
   overflow: hidden;
-  background-color: $dark;
+  background-color: rgba(255, 255, 255, 0.97);
 
   h1 {
     display: inline-block;
@@ -24,6 +24,10 @@ header {
     display: block;
     padding: 1em;
   }
+
+  .selected {
+    text-decoration: underline;
+  }
 }
 
 #project,
@@ -33,7 +37,7 @@ header {
     width: 100%;
     z-index: 5;
 
-    @media (min-width: 500px) {
+    @media (min-width: $mobile-width) {
       position: fixed;
     }
   }
